@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+.button {
+   
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: rgb(163, 154, 154);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(253, 250, 250);
+}
+
+.button:hover {background-color: #333}
+
+.button:active {
+  background-color: #333;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+h1 {text-align: center;}
+p {text-align: center;
+    font-size: x-large;}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+}
+
+body {
+    background-color: #333;
+}
+</style>
+
+<script>
+    function myFunction() {
+      location.replace("/predict")
+    }
+    </script>
+</head>
+<body>
+    
+
+<ul>
+    <li><a href="/predict">Predict</a></li>
+    <li><a class="active" href="/about">Home</a></li>
+  
+</ul>
+<div class="container">
+    <img src="static/istockphoto-517340891-612x612.jpeg" alt="Crude" width="1500" height="400";>
+  
+    <div class="centered">Crude Oil Prediction</div>
+  </div>
+
+<br>
+<br>
+<p style='color: white;'>Demand for oil is inclastic, therefore the rise in price is good news for producers because they will see an increase in their revenue. Oil importers, however, will experience increased costs of purchasing oil. Because oil is the largest traded commodity, the effects are quite significant. A rising oil price can even shift economic/political power from oil importers to oil exporters. The crude oil price movements are subject to diverse influencing factors.</p>
+<br>
+<button class="button" onclick="myFunction()">Predict Price </button>
+</body>
+</html>
+
+
